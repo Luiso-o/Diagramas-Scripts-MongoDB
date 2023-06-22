@@ -1,0 +1,5 @@
+
+db.createCollection( 'Canal', {validator: {$jsonSchema: {bsonType: 'object',title:'Canal',required: [         'Usuario',          'idCanal',          'Nombre',          'Descripcion',          'FechaCreacion',          'Inscripciones'],properties: {Usuario: {bsonType: 'objectId'},idCanal: {bsonType: 'dbPointer'},Nombre: {bsonType: 'string'},Descripcion: {bsonType: 'string'},FechaCreacion: {bsonType: 'date'},Inscripciones: {bsonType: 'object',
+title:'object',required: [         'idUsuario',          'DarLikeVideo',          'DarDislikeVideo',          'FechaHora'],properties: {idUsuario: {bsonType: 'dbPointer'},DarLikeVideo: {bsonType: 'object',
+title:'object',required: [         'idUsuario'],properties: {idUsuario: {bsonType: 'dbPointer'}}},DarDislikeVideo: {bsonType: 'object',
+title:'object',properties: {idUsuario: {bsonType: 'dbPointer'}}},FechaHora: {bsonType: 'date'}}}}         }      }});  

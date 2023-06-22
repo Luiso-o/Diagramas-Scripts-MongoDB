@@ -1,0 +1,2 @@
+
+db.createCollection( 'MyPlayList', {validator: {$jsonSchema: {bsonType: 'object',title:'MyPlayList',required: [         'idPLayList',          'FechaCreacion',          'Estado'],properties: {idPLayList: {bsonType: 'dbPointer'},FechaCreacion: {bsonType: 'date'},Estado: {bsonType: 'string'}}         }      }});  

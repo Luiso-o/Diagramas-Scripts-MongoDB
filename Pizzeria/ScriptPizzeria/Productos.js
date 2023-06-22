@@ -1,0 +1,4 @@
+
+db.createCollection( 'Productos', {validator: {$jsonSchema: {bsonType: 'object',title:'Productos',required: [         'TipoProducto',          'Nombre',          'Descripcion',          'Imagen',          'Precio',          'Pedidos'],properties: {TipoProducto: {bsonType: 'object',
+title:'object',required: [         'Pizza',          'Hamburguesa',          'Bebida'],properties: {Pizza: {bsonType: 'object',
+title:'object',required: [         'idCategoriaPizza',          'NombrePizzaTemporada'],properties: {idCategoriaPizza: {bsonType: 'dbPointer'},NombrePizzaTemporada: {bsonType: 'string'}}},Hamburguesa: {bsonType: 'bool'},Bebida: {bsonType: 'bool'}}},Nombre: {bsonType: 'string'},Descripcion: {bsonType: 'string'},Imagen: {bsonType: 'string'},Precio: {bsonType: 'double'},Pedidos: {bsonType: 'objectId'}}         }      }});  

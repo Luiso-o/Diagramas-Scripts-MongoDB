@@ -1,0 +1,4 @@
+
+db.createCollection( 'PlayList', {validator: {$jsonSchema: {bsonType: 'object',title:'PlayList',required: [         'idPlayList',          'Titulo',          'NumeroDeCanciones',          'FechaCreacion'],properties: {idPlayList: {bsonType: 'string'},Titulo: {bsonType: 'string'},NumeroDeCanciones: {bsonType: 'int'},FechaCreacion: {bsonType: 'date'},BorrarPlaylist: {bsonType: 'object',
+title:'object',required: [         'estado'],properties: {estado: {bsonType: 'string'},FechaDeEliminacion: {bsonType: 'date'}}},CompartirLista: {bsonType: 'object',
+title:'object',required: [         'idUsuario',          'Fecha',          'idCancion'],properties: {idUsuario: {bsonType: 'dbPointer'},Fecha: {bsonType: 'date'},idCancion: {bsonType: 'date'}}}}         }      }});  

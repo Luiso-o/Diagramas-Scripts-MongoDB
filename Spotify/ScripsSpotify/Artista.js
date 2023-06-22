@@ -1,0 +1,4 @@
+
+db.createCollection( 'Artista', {validator: {$jsonSchema: {bsonType: 'object',title:'Artista',required: [         'idArtista',          'Nombre',          'Imagen',          'Album'],properties: {idArtista: {bsonType: 'dbPointer'},Nombre: {bsonType: 'string'},Imagen: {bsonType: 'string'},Album: {bsonType: 'object',
+title:'object',required: [         'idAlbum',          'Titulo',          'Imagen',          'Cancion'],properties: {idAlbum: {bsonType: 'dbPointer'},Titulo: {bsonType: 'string'},Imagen: {bsonType: 'string'},Cancion: {bsonType: 'object',
+title:'object',required: [         'idCancion',          'Titulo',          'Duracion',          'Reproducciones'],properties: {idCancion: {bsonType: 'dbPointer'},Titulo: {bsonType: 'string'},Duracion: {bsonType: 'decimal'},Reproducciones: {bsonType: 'int'}}}}}}         }      }});  
