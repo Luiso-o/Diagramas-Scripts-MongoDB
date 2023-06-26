@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "6491cf4fcbbecb86d172baf0"
+  },
+  "idUsuario": 1,
+  "email": "juan@ejemplo.com",
+  "password": "G56473h",
+  "nombreDeUsuario": "Juan Garcia",
+  "fechaDeNacimiento": "1990-04-23",
+  "sexo": "M",
+  "pais": "Colombia",
+  "CodigoPostal": 23456,
+  "canal": {
+    "idCanal": 1,
+    "nombreCanal": "Culcura Colombiana",
+    "fechaDeCreacion": "2020-01-12",
+    "usuariosRegistrados": {
+      "idUsuario": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "myPlaylist": [
+      {
+        "idPlaylist": 1,
+        "nombre": "Musica Colombiana",
+        "fechaCreacion": "2021-04-02",
+        "estado": "privado"
+      }
+    ]
+  },
+  "videos": [
+    {
+      "idVideo": 1,
+      "titulo": "Gastronomia Colombiana",
+      "descripcion": "Preparando Arepas",
+      "tamanio": "300M",
+      "nombreArchivo": "Aprende a preparar Arepas",
+      "duracion": "30 min",
+      "thumbnail": "url",
+      "numeroReproducciones": 800,
+      "registroLikes": [
+        {
+          "idUsuario": 3,
+          "likes": true,
+          "disLikes": false,
+          "fechaHora": "2022-04-20T12:30:45.678Z"
+        }
+      ],
+      "estado": "Publico",
+      "etiquetas": [
+        {
+          "idEtiqueta": 1,
+          "nombreDeLaEtiqueta": "Recuerda usar masa de maiz :)",
+          "idUsuario": 2,
+          "fechaYHora": "2022-06-20T12:30:45.678Z"
+        }
+      ],
+      "comentarios": [
+        {
+          "idUsuario": 4,
+          "textoDelComentario": "Muy buena receta ;)",
+          "fechaHora": "2022-06-20T12:30:45.678Z",
+          "registroLikes": [
+            {
+              "idUsuario": 2,
+              "like": true,
+              "disLike": false,
+              "fechaHora": "2022-06-20T12:30:45.678Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]

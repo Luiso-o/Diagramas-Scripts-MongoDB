@@ -1,0 +1,231 @@
+[{
+  "_id": {
+    "$oid": "6492d50dcbbecb86d172baf6"
+  },
+  "usuarioPremium": [
+    {
+      "idUsuario": 1,
+      "password": "passUsuarioPremiun1",
+      "nombreDeUsuario": "Pepe",
+      "fechaDeNacimiento": "1990-06-23",
+      "sexo": "M",
+      "pais": "España",
+      "codigoPostal": 18076,
+      "subscripcion": {
+        "fechaDeSubscripcion": "2023-06-21",
+        "fechaDeRenovacion": "2024-06-21",
+        "formaDePago": [
+          {
+            "Targeta": {
+              "numeroTargeta": {
+                "$numberLong": "1234567890123"
+              },
+              "fechaCaducidad": "10/2030",
+              "codigoDeSeguridad": 123
+            },
+            "Paypal": {
+              "NombreDeUsuario": "Pepe",
+              "pagos": [
+                {
+                  "idNumeroOrden": 0,
+                  "fecha": "",
+                  "Total": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "myPlaylist": [
+        {
+          "idPlaylist": 1,
+          "Titulo": "MiPlaylist1",
+          "numeroDeCanciones": 100,
+          "FechaCreacion": "2023-06-22",
+          "borrarPlaylist": {
+            "Estado": "activo",
+            "compartirEnPlaylistActiva": {
+              "idUsuario": 2,
+              "idCancion": [
+                1
+              ],
+              "fecha": "2023-07-20"
+            },
+            "FechaBorrado": ""
+          }
+        }
+      ],
+      "misFavoridos": {
+        "idArtista": [
+          1
+        ],
+        "idAlbum": [
+          1
+        ],
+        "idCancion": [
+          1
+        ]
+      }
+    },
+    {
+      "idUsuario": 2,
+      "password": "passUsuarioPremiun2",
+      "nombreDeUsuario": "Cristina",
+      "fechaDeNacimiento": "1991-04-05",
+      "sexo": "F",
+      "pais": "Francia",
+      "codigoPostal": 14576,
+      "subscripcion": {
+        "fechaDeSubscripcion": "2023-06-21",
+        "fechaDeRenovacion": "2024-06-21",
+        "formaDePago": [
+          {
+            "Targeta": {
+              "numeroTargeta": 0,
+              "fechaCaducidad": "",
+              "codigoDeSeguridad": 0
+            },
+            "Paypal": {
+              "NombreDeUsuario": "Cristina",
+              "pagos": [
+                {
+                  "idNumeroOrden": 1,
+                  "fecha": "2023-06-21",
+                  "Total": 50
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "myPlaylist": [
+        {
+          "idPlaylist": 1,
+          "Titulo": "MiPlaylist1",
+          "numeroDeCanciones": 100,
+          "FechaCreacion": "2023-06-22",
+          "borrarPlaylist": {
+            "Estado": "activo",
+            "compartirEnPlaylistActiva": {
+              "idUsuario": 3,
+              "idCancion": [
+                2,
+                3
+              ],
+              "fecha": "2023-08-20"
+            },
+            "FechaBorrado": ""
+          }
+        },
+        {
+          "idPlaylist": 2,
+          "Titulo": "MiPlaylist2",
+          "numeroDeCanciones": 200,
+          "FechaCreacion": "2023-06-23",
+          "borrarPlaylist": {
+            "Estado": "Eliminada",
+            "compartirEnPlaylistActiva": {
+              "idUsuario": 0,
+              "idCancion": [
+                0
+              ],
+              "fecha": ""
+            },
+            "FechaBorrado": "2023-06-26"
+          }
+        }
+      ],
+      "misFavoridos": {
+        "idArtista": [
+          1
+        ],
+        "idAlbum": [
+          1
+        ],
+        "idCancion": [
+          1
+        ]
+      }
+    }
+  ],
+  "usuarioFree": [
+    {
+      "idUsuario": 3,
+      "password": "passUsuarioFree1",
+      "nombreDeUsuario": "Patricia",
+      "fechaDeNacimiento": "1993-08-01",
+      "sexo": "F",
+      "pais": "Portugal",
+      "codigoPostal": 29324,
+      "myPlaylist": [
+        {
+          "idPlaylist": 1,
+          "Titulo": "MiPlaylist1",
+          "numeroDeCanciones": 150,
+          "FechaCreacion": "2023-06-22",
+          "borrarPlaylist": {
+            "Estado": "activo",
+            "compartirEnPlaylistActiva": {
+              "idUsuario": 1,
+              "idCancion": [
+                1,
+                2,
+                3
+              ],
+              "fecha": "2023-07-20"
+            },
+            "FechaBorrado": ""
+          }
+        }
+      ],
+      "misFavoridos": {
+        "idArtista": [
+          1
+        ],
+        "idAlbum": [
+          1
+        ],
+        "idCancion": [
+          1
+        ]
+      }
+    }
+  ],
+  "artista": [
+    {
+      "idArtista": [
+        1
+      ],
+      "imagen": "Url",
+      "idUsuario": [
+        1,
+        2,
+        3
+      ],
+      "album": [
+        {
+          "idAlbum": 1,
+          "añoPublicacion": 2021,
+          "portada": "Url",
+          "Canciones": [
+            {
+              "idCancion": 1,
+              "duracion": "3.24 min",
+              "Reproducciones": 24000
+            },
+            {
+              "idCancion": 2,
+              "duracion": "4.38 min",
+              "Reproducciones": 34000
+            },
+            {
+              "idCancion": 3,
+              "duracion": "4.20 min",
+              "Reproducciones": 64000
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}]
